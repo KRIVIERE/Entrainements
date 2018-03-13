@@ -1,0 +1,30 @@
+Utilisation de Git sur le terminal
+
+Créer un dossier en local : kevinTraining
+
+git clone https://github.com/KRIVIERE/Entrainements.git
+==> pour cloner le fichier .git de Kévin
+cd Entrainements/
+
+git status
+==>
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+git checkout -b jcvizzi
+
+git status
+On branch jcvizzi
+
+git checkout master
+==>
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+git status
+==>
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
