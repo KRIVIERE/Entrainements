@@ -1,0 +1,91 @@
+Utilisation de Git sur le terminal
+
+Créer un dossier en local : kevinTraining
+
+git clone https://github.com/KRIVIERE/Entrainements.git
+==> pour cloner le fichier .git de Kévin
+cd Entrainements/
+
+git status
+==>
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+git checkout -b jcvizzi
+
+git status
+On branch jcvizzi
+
+git checkout master
+==>
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+git status
+==>
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+
+CRÉATION D'UN DOSSIER ET D'UN FICHIER
+git status
+==>
+On branch jcvizzi
+Untracked files:
+  			(use "git add <file>..." to include in what will be committed)
+
+				notesGit/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+git add notesGit/
+==> permet de stager notesGit/ pour que les modifications soient prises en compte, ou git add * pour faire la même de tous les dossiers
+
+git status
+==>
+On branch jcvizzi
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   notesGit/notesGit
+
+git commit
+==>
+[jcvizzi 879ff8e] Le début de mes notes sur Git
+ 1 file changed, 30 insertions(+)
+ create mode 100644 notesGit/notesGit
+
+git status
+==>
+On branch jcvizzi
+nothing to commit, working directory clean
+
+git log
+==> Pour lire les commits faits :
+
+commit 879ff8e9c77d6ff0758569b8ffac547faf88329a
+Author: jean-christian <jc.vizzi@free.fr>
+Date:   Tue Mar 13 16:16:06 2018 +0100
+
+    Le début de mes notes sur Git
+
+commit 814a7e67838514fb953fca18477b65a39c10f96e
+Author: KRIVIERE <kvin_riviere@yahoo.fr>
+Date:   Tue Mar 13 15:50:42 2018 +0100
+
+    first commit
+
+git push --set-upstream origin jcvizzi
+==>
+Username for 'https://github.com': jcvizzi
+Password for 'https://jcvizzi@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 616 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/KRIVIERE/Entrainements.git
+ * [new branch]      jcvizzi -> jcvizzi
+Branch jcvizzi set up to track remote branch jcvizzi from origin.
